@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 // COMPONENTS
 import { Nav } from "../components/Header";
 import { Catalog } from "../components/Catalog";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
@@ -36,7 +37,57 @@ export default function Home() {
         <section className={styles.catalog}>
           <Catalog />
         </section>
+        <section className={styles.ad}>
+          <div className={styles.ad_text}>
+            <h2>Assista quando quiser.</h2>
+            <p>
+              Assista no celular, tablet, Smart TV ou notebook sem pagar a mais
+              por isso
+            </p>
+          </div>
+          <div className={styles.ad_img}>
+            <a href="">
+              <img src="/tabletMuflix.png" alt="" />
+            </a>
+          </div>
+        </section>
+        <section className={styles.asks}>
+          <div className={styles.asks_title}>
+            <h2>Perguntas Frequentes</h2>
+          </div>
+          <div className={styles.asks_list}>
+            <ul>
+              <li className={styles.ask}>
+                O que é a Muflix?
+                <span>
+                  <img src="/arrow-down.png" alt="" />
+                </span>
+              </li>
+              <li className={styles.ask}>
+                Quanto custa a Muflix?
+                <span>
+                  <img src="/arrow-down.png" alt="" />
+                </span>
+              </li>
+              <li className={styles.ask}>
+                Onde posso assistir?
+                <span>
+                  <img src="/arrow-down.png" alt="" />
+                </span>
+              </li>
+              <li className={styles.ask}>
+                Como faço para cancelar?
+                <span>
+                  <img src="/arrow-down.png" alt="" />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

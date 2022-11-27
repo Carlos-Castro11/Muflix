@@ -1,7 +1,8 @@
 .header {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 999999;
+  background-color: var(--blue-dark);
 }
 
 .header_contents {

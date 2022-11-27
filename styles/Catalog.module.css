@@ -3,14 +3,22 @@
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: var(--blue-dark);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+
+  color: var(--blue-dark);
 }
 
 .catalog_films {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   background-color: var(--white);
-  padding: 20px 60px;
+  padding: 20px 10px;
   border-bottom: 2px solid var(--green);
   border-right: 2px solid var(--green);
   border-radius: 5px;
@@ -21,7 +29,7 @@
 }
 
 .catalog_films > img {
-  max-width: 30%;
+  max-width: 100%;
   border-radius: 5px;
   box-shadow: 0px 0px 2px black;
 }
