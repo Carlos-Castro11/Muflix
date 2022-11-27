@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 40vh;
+  height: 50vh;
   position: relative;
   display: flex;
 }
@@ -40,7 +40,7 @@
 }
 
 .banner_texts > p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: white;
   margin-bottom: 10%;
 }
@@ -48,7 +48,7 @@
 .banner_texts > a {
   color: var(--dark-blue);
   font-weight: bold;
-  max-width: 50%;
+  max-width: 100%;
   border-radius: 5px;
   text-decoration: none;
   background-color: var(--green);
