@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.header_contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0px 6%;
+}
+
+.nav > ul {
+  list-style: none;
+}
+.nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu_item:nth-child(2) {
+  display: none;
+}
