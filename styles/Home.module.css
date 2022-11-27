@@ -55,3 +55,9 @@
   padding: 2px 20px;
   font-size: 1.7rem;
 }
+
+/* CATALOG */
+.catalog {
+  background-color: var(--gray-light);
+  padding: 20px;
+}
