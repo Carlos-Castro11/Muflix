@@ -31,7 +31,15 @@ export default function Home() {
               </p>
               <a href="#">Assinar</a>
             </div>
-            <div className={styles.banner_form}></div>
+            <div className={styles.banner_form}>
+              <form action="">
+                <label htmlFor="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <label htmlFor="password">Senha</label>
+                <input type="password" name="password" id="password" />
+                <button>Assinar</button>
+              </form>
+            </div>
           </div>
         </div>
         <section className={styles.catalog}>

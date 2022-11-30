@@ -34,6 +34,52 @@
   align-items: center;
 }
 
+.banner_form {
+  z-index: 99;
+  display: none;
+  place-content: center;
+}
+
+.banner_form > form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 5px;
+  border-bottom: 3px solid var(--green);
+  border-right: 3px solid var(--green);
+  min-width: 300px;
+}
+
+.banner_form > label {
+  color: var(--blue-dark);
+}
+
+.banner_form > form > input {
+  color: var(--blue-dark);
+  background-color: var(--gray-input);
+  padding: 10px;
+  border: none;
+  margin-bottom: 10%;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.banner_form > form > input:focus {
+  outline: none;
+}
+
+.banner_form > form > button {
+  color: var(--blue-dark);
+  background-color: var(--green);
+  padding: 3px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
 .banner_texts > h1 {
   color: white;
   font-size: 2.5rem;
@@ -150,4 +196,348 @@
 
 .ask > span > img {
   max-width: 70%;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 400px) {
+  .banner_texts > h1 {
+    font-size: 3rem;
+  }
+
+  .banner_texts > p {
+    font-size: 1.4rem;
+  }
+
+  .banner_texts > a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .banner_texts > h1 {
+    font-size: 3.5rem;
+  }
+  .banner {
+    height: 60vh;
+  }
+
+  .banner_texts > p {
+    font-size: 2rem;
+  }
+
+  .banner_texts > a {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .banner {
+    height: 65vh;
+  }
+
+  .banner_texts > p {
+    font-size: 2rem;
+  }
+
+  .banner_texts > a {
+    font-size: 3.5rem;
+  }
+
+  /* AD */
+  .ad_text > h2 {
+    font-size: 3rem;
+  }
+  .ad_text > p {
+    font-size: 1.4rem;
+  }
+
+  /* ASKS */
+  .asks_title {
+    font-size: 2rem;
+  }
+
+  .ask {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .banner_contents {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    place-content: center;
+  }
+
+  .banner_form {
+    display: flex;
+  }
+
+  .banner_texts > h1 {
+    font-size: 3.5rem;
+  }
+
+  .banner_texts > p {
+    font-size: 1.7rem;
+    place-self: start;
+  }
+
+  .banner_texts > a {
+    display: none;
+  }
+
+  .banner {
+    height: 85vh;
+  }
+
+  /* AD*/
+  .ad {
+    background-color: var(--blue-dark);
+    display: flex;
+    grid-template-columns: 1fr;
+    place-content: center;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .ad_text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+  }
+
+  /* ASKS */
+  .asks_title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .banner_form > form {
+    min-width: 350px;
+    margin-top: 5%;
+  }
+
+  .banner_form > form > label {
+    font-size: 1.4rem;
+  }
+
+  .banner_form > form > input {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  .banner_form > form > button {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .banner_texts {
+    justify-content: start;
+  }
+
+  .banner_texts > h1 {
+    font-size: 4rem;
+  }
+
+  .banner_texts > p {
+    font-size: 1.9rem;
+    place-self: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner_contents {
+    gap: 50px;
+  }
+
+  .banner_form > form {
+    min-width: 400px;
+    margin-top: 5%;
+  }
+
+  .banner_form > form > label {
+    font-size: 1.5rem;
+  }
+
+  .banner_form > form > input {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  .banner_form > form > button {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .banner_texts {
+    min-width: 600px;
+    place-items: start;
+  }
+
+  .banner_texts > h1 {
+    font-size: 5rem;
+  }
+
+  .banner_texts > p {
+    font-size: 2rem;
+    place-self: start;
+  }
+
+  /* AD */
+  .ad_text > h2 {
+    font-size: 4rem;
+  }
+  .ad_text > p {
+    font-size: 1.8rem;
+  }
+
+  /* ASKS */
+  .asks_title {
+    max-width: 1200px;
+    margin: 0% auto;
+    margin-bottom: 2%;
+    font-size: 3.5rem;
+  }
+
+  .ask {
+    display: flex;
+    place-self: center;
+    width: 85%;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .banner_contents {
+    gap: 50px;
+  }
+
+  .banner_form > form {
+    min-width: 450px;
+    margin-top: 5%;
+  }
+
+  .banner_form > form > label {
+    font-size: 1.5rem;
+  }
+
+  .banner_form > form > input {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  .banner_form > form > button {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .banner_texts {
+    min-width: 700px;
+    place-items: start;
+  }
+
+  .banner_texts > h1 {
+    font-size: 5.5rem;
+  }
+
+  .banner_texts > p {
+    font-size: 2.1rem;
+    place-self: start;
+  }
+}
+
+@media (min-width: 1700px) {
+  .banner {
+    height: 90vh;
+  }
+
+  .banner_contents {
+    gap: 50px;
+  }
+
+  .banner_form > form > label {
+    font-size: 1.5rem;
+  }
+
+  .banner_form > form > input {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  .banner_form > form > button {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .banner_texts {
+    min-width: 900px;
+    place-items: start;
+  }
+
+  .banner_texts > h1 {
+    font-size: 7rem;
+  }
+
+  .banner_texts > p {
+    font-size: 2.4rem;
+    place-self: start;
+  }
+
+  /* AD */
+  .ad_text > h2 {
+    font-size: 5rem;
+  }
+  .ad_text > p {
+    font-size: 2.4rem;
+  }
+
+  .ad_text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1900px) {
+  .banner {
+    height: 100vh;
+  }
+
+  .banner_contents {
+    gap: 50px;
+  }
+
+  .banner_form > form > label {
+    font-size: 1.5rem;
+  }
+
+  .banner_form > form {
+    min-width: 500px;
+  }
+
+  .banner_form > form > input {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  .banner_form > form > button {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .banner_texts {
+    min-width: 900px;
+    place-items: start;
+  }
+
+  .banner_texts > h1 {
+    font-size: 7.5rem;
+  }
+
+  .banner_texts > p {
+    font-size: 2.4rem;
+    place-self: start;
+  }
 }
