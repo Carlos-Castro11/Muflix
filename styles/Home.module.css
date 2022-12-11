@@ -200,20 +200,6 @@
 
 /* RESPONSIVE */
 
-@media (min-width: 400px) {
-  .banner_texts > h1 {
-    font-size: 3rem;
-  }
-
-  .banner_texts > p {
-    font-size: 1.4rem;
-  }
-
-  .banner_texts > a {
-    font-size: 2rem;
-  }
-}
-
 @media (min-width: 500px) {
   .banner_texts > h1 {
     font-size: 3.5rem;
