@@ -198,7 +198,7 @@
   max-width: 70%;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE  ====================================================================================*/
 
 @media (min-width: 500px) {
   .banner_texts > h1 {
@@ -388,9 +388,7 @@
   }
 
   .ask {
-    display: flex;
     place-self: center;
-    width: 85%;
     font-size: 2rem;
   }
 }

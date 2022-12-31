@@ -65,30 +65,58 @@ export default function Home() {
           </div>
           <div className={styles.asks_list}>
             <ul>
-              <li className={styles.ask}>
-                O que é a Muflix?
-                <span>
-                  <img src="/arrow-down.png" alt="" />
-                </span>
-              </li>
-              <li className={styles.ask}>
-                Quanto custa a Muflix?
-                <span>
-                  <img src="/arrow-down.png" alt="" />
-                </span>
-              </li>
-              <li className={styles.ask}>
-                Onde posso assistir?
-                <span>
-                  <img src="/arrow-down.png" alt="" />
-                </span>
-              </li>
-              <li className={styles.ask}>
-                Como faço para cancelar?
-                <span>
-                  <img src="/arrow-down.png" alt="" />
-                </span>
-              </li>
+              <div className={styles.ask1}>
+                <div>
+                  <li className={styles.ask}>
+                    O que é a Muflix?
+                    <span>
+                      <img src="/arrow-down.png" alt="" />
+                    </span>
+                  </li>
+                </div>
+                <div className={styles.answer}>
+                  <p>É um site com vários filmes e séries.</p>
+                </div>
+              </div>
+              <div className={styles.ask2}>
+                <div>
+                  <li className={styles.ask}>
+                    Quanto custa a Muflix?
+                    <span>
+                      <img src="/arrow-down.png" alt="" />
+                    </span>
+                  </li>
+                </div>
+                <div className={styles.answer}>
+                  <p>R$35,00 por mês.</p>
+                </div>
+              </div>
+              <div className={styles.ask3}>
+                <div>
+                  <li className={styles.ask}>
+                    Onde posso assistir?
+                    <span>
+                      <img src="/arrow-down.png" alt="" />
+                    </span>
+                  </li>
+                </div>
+                <div className={styles.answer}>
+                  <p>Em qualquer lugar.</p>
+                </div>
+              </div>
+              <div className={styles.ask3}>
+                <div>
+                  <li className={styles.ask}>
+                    Como posso cancelar?
+                    <span>
+                      <img src="/arrow-down.png" alt="" />
+                    </span>
+                  </li>
+                </div>
+                <div className={styles.answer}>
+                  <p>Em qualquer lugar e a qualquer momento.</p>
+                </div>
+              </div>
             </ul>
           </div>
         </section>
